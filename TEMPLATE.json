@@ -1,0 +1,64 @@
+{
+  "id": "agency-site",
+  "title": "Agency website",
+  "category": "Client Tools",
+  "upstreamRepository": "StartBootstrap/startbootstrap-agency",
+  "upstreamCommit": "b2d5d5c6b1396bc5b0e8dd92c693b106cfb7cee1",
+  "upstreamUrl": "https://codeload.github.com/StartBootstrap/startbootstrap-agency/zip/b2d5d5c6b1396bc5b0e8dd92c693b106cfb7cee1",
+  "upstreamSha256": "5334263392681b157e747b6d78d30e7eed93882f646726802827c28c71e91d74",
+  "upstreamBytes": 2053978,
+  "license": "MIT",
+  "licenseSha256": "e8b857747301fcd4c885b3216544b18bbf60328aec2c34da614787346cf40282",
+  "upstreamUpdated": "2024-07-15T17:10:23Z",
+  "archived": false,
+  "upstreamScripts": {
+    "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+    "build:assets": "node scripts/build-assets.js",
+    "build:pug": "node scripts/build-pug.js",
+    "build:scripts": "node scripts/build-scripts.js",
+    "build:scss": "node scripts/build-scss.js",
+    "clean": "node scripts/clean.js",
+    "start": "npm run build && node scripts/start.js",
+    "start:debug": "npm run build && node scripts/start-debug.js"
+  },
+  "upstreamDependencies": {
+    "bootstrap": "5.2.3"
+  },
+  "summary": "A responsive agency website with services, project modals, a team section and sample contact form.",
+  "features": [
+    "Services and project gallery",
+    "Team and company timeline",
+    "Sample contact form; no email service"
+  ],
+  "reviewDate": "2026-10-14",
+  "adaptations": [
+    "Use upstream prebuilt HTML/CSS/JS as editable source; no build toolchain required",
+    "Replace all bundled images, logos and illustrations with original SVG sample artwork",
+    "Remove SB Forms runtime and API-token attributes; explicitly label sample forms and content",
+    "Add a dependency-free local server with a public-file allowlist"
+  ],
+  "replacedAssets": [
+    "assets/favicon.ico",
+    "assets/img/about/1.jpg",
+    "assets/img/about/2.jpg",
+    "assets/img/about/3.jpg",
+    "assets/img/about/4.jpg",
+    "assets/img/close-icon.svg",
+    "assets/img/header-bg.jpg",
+    "assets/img/logos/facebook.svg",
+    "assets/img/logos/google.svg",
+    "assets/img/logos/ibm.svg",
+    "assets/img/logos/microsoft.svg",
+    "assets/img/map-image.png",
+    "assets/img/navbar-logo.svg",
+    "assets/img/portfolio/1.jpg",
+    "assets/img/portfolio/2.jpg",
+    "assets/img/portfolio/3.jpg",
+    "assets/img/portfolio/4.jpg",
+    "assets/img/portfolio/5.jpg",
+    "assets/img/portfolio/6.jpg",
+    "assets/img/team/1.jpg",
+    "assets/img/team/2.jpg",
+    "assets/img/team/3.jpg"
+  ]
+}
